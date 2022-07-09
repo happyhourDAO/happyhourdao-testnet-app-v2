@@ -1,0 +1,54 @@
+body {
+  background-image: url(/img/wallpapersden.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.dashboard {
+  backdrop-filter: blur(15px);
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+}
+
+button {
+  font-weight: bold;
+}
+
+#contractDetails {
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+}
+
+#topLeft {
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+}
+
+#walletDetails {
+  animation-name: fadeTop;
+  animation-duration: 1s;
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
